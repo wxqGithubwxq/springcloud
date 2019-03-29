@@ -1,5 +1,7 @@
 package com.wxq.eurekaclient3.DesignModel;
 
+import com.wxq.eurekaclient3.DesignModel.Reflection.Student;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -13,7 +15,7 @@ import java.util.Date;
 public class ReflectingMainTest {
 
     public static void main(String[] args) throws Exception{
-        Class clazz=Class.forName("com.wxq.eurekaclient3.DesignModel.Reflection.Student");
+        /*Class clazz=Class.forName("com.wxq.eurekaclient3.DesignModel.Reflection.Student");
         //获取构造函数
         Constructor[] constructors=clazz.getConstructors();
         System.out.println("获取公有构造函数开始");
@@ -57,12 +59,18 @@ public class ReflectingMainTest {
         for(Method method:allMethods){
             System.out.println(method);
         }
-        System.out.println("获取所有方法结束");
+        System.out.println("获取所有方法结束");*/
 
         /*Date date=new Date();
         Thread.sleep(4000);
         Date date1=new Date();
         Long time=(date1.getTime()-date.getTime())/1000;
         System.out.println(time);*/
+
+        Student student=new Student();
+        student.setAddress("高新区");
+        student.setName("wxq");
+        student.setNumber("1");
+        System.out.println(student.toString());
     }
 }

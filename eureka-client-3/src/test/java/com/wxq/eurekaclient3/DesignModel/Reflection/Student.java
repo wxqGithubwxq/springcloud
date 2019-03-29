@@ -68,4 +68,13 @@ public class Student {
     public void print(){
         System.out.println("无参公有方法打印");
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", number='" + number + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
