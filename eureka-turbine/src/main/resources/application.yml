@@ -1,0 +1,50 @@
+server:
+  port: 1001 #设置端口
+  servlet:
+    context-path: / #应用名称
+  tomcat:
+    uri-encoding: UTF-8 #设置字符编码
+turbine:
+  app-config: SPRING-CLOUD-PAPER
+  combine-host-port: true
+  cluster-name-expression: new String('default')
+  #aggregator:
+    #cluster-config: default
+
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+feign:
+  httpclient:
+    connection-timeout: 6000 # 熔断超时时长：6000ms
+spring:
+  application:
+    name: spring-cloud-turbine #定义服务名称 必须定义
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  aop:
+    proxy-target-class: true
+    auto: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.2.47:8000/eureka/
+  instance:
+    # 配置使用主机名注册服务
+    hostname: node1
+    # 优先使用IP地址方式进行注册服务
+    prefer-ip-address: true
+    # 配置使用指定IP
+    ip-address: 192.168.2.39
+logging:
+  level:
+    com.mapper: debug #打印sql
+
