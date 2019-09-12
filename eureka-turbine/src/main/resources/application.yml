@@ -1,9 +1,9 @@
 server:
-  port: 1001 #ÉèÖÃ¶Ë¿Ú
+  port: 1001 #ï¿½ï¿½ï¿½Ã¶Ë¿ï¿½
   servlet:
-    context-path: / #Ó¦ÓÃÃû³Æ
+    context-path: / #Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   tomcat:
-    uri-encoding: UTF-8 #ÉèÖÃ×Ö·û±àÂë
+    uri-encoding: UTF-8 #ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
 turbine:
   app-config: SPRING-CLOUD-PAPER
   combine-host-port: true
@@ -16,10 +16,10 @@ ribbon:
   ConnectTimeout: 6000
 feign:
   httpclient:
-    connection-timeout: 6000 # ÈÛ¶Ï³¬Ê±Ê±³¤£º6000ms
+    connection-timeout: 6000 # ï¿½Û¶Ï³ï¿½Ê±Ê±ï¿½ï¿½ï¿½ï¿½6000ms
 spring:
   application:
-    name: spring-cloud-turbine #¶¨Òå·şÎñÃû³Æ ±ØĞë¶¨Òå
+    name: spring-cloud-turbine #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ë¶¨ï¿½ï¿½
   servlet:
     multipart:
       max-request-size: 10MB
@@ -36,15 +36,15 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.2.47:8000/eureka/
+      defaultZone: http://192.168.2.209:8000/eureka/
   instance:
-    # ÅäÖÃÊ¹ÓÃÖ÷»úÃû×¢²á·şÎñ
+    # ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½
     hostname: node1
-    # ÓÅÏÈÊ¹ÓÃIPµØÖ··½Ê½½øĞĞ×¢²á·şÎñ
+    # ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½IPï¿½ï¿½Ö·ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½
     prefer-ip-address: true
-    # ÅäÖÃÊ¹ÓÃÖ¸¶¨IP
+    # ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ö¸ï¿½ï¿½IP
     ip-address: 192.168.2.39
 logging:
   level:
-    com.mapper: debug #´òÓ¡sql
+    com.mapper: debug #ï¿½ï¿½Ó¡sql
 
