@@ -10,7 +10,7 @@ public class Context {
     //操作对象
     private Operation operation;
 
-    //构造函数1
+    //构造函数
     public Context(Operation operation){
         this.operation=operation;
     }
